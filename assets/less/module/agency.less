@@ -1,0 +1,258 @@
+/*------------------------------------*\
+    #Agency
+\*------------------------------------*/
+
+.agency-item {
+    position: relative;
+    background-color: @color-white;
+    padding: 30px;
+    margin-bottom: 30px;
+    .rounded(4px);
+}
+
+.agency-item .agency--img {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 270px;
+    height: 270px;
+}
+
+.agency-item .agency--content {
+    padding: 28px 0 30px 320px;
+}
+
+.agency-item .agency--content .agency--title {
+    color: @color-heading;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-bottom: 11px;
+}
+
+.agency-item .agency--content .agency--title a {
+    color: @color-heading;
+}
+
+.agency-item .agency--content .agency--title a:hover {
+    color: @color-theme;
+}
+
+.agency-item .agency--content .agency--location {
+    color: @color-body;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 0;
+    display: block;
+}
+
+.agency-item .agency--content .agency--location i {
+    margin-right: 7px;
+}
+
+.agency-item .agency--content .agency---details p {
+    margin-bottom: 24px;
+}
+
+.Properties--number,
+.agency-item .agency--content .agency--social-links {
+    display: inline-block;
+}
+
+.agency-item .agency--content .agency--social-links a {
+    display: inline-block;
+    font-size: 14px;
+    color: @color-body;
+    margin-right: 17px;
+}
+
+.agency-item .agency--content .agency--social-links a:hover {
+    color: @color-heading;
+}
+
+.agency-item .agency--content .agency--social-links a:last-of-type {
+    margin-right: 0;
+}
+
+.Properties--number {
+    padding: 5px 10px;
+    background-color: @color-heading;
+    color: @color-white;
+    font-size: 10px;
+    .rounded(3px);
+    margin-left: 24px;
+}
+
+.agency--contact li {
+    color: @color-body;
+    font-size: 14px;
+    line-height: 32px;
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.agency--contact li:last-of-type {
+    margin-right: 0;
+}
+
+.agency--contact li i {
+    color: @color-heading;
+    padding-right: 8px;
+}
+
+/* Custom, iPhone Retina */
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .agency-item {
+        padding: 15px;
+        max-width: 300px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .agency-item .agency--img {
+        position: static;
+    }
+    .agency-item .agency--img img {
+        max-width: 100%;
+        height: auto;
+        width: auto;
+    }
+    .agency-item .agency--content {
+        padding: 20px 0 0 0;
+    }
+    .agency-item .agency--content .pull-right {
+        float: none !important;
+    }
+    .agency-item .agency--content .agency--social-links {
+        margin-top: 20px;
+    }
+    .agency-item .agency--location {
+        margin-bottom: 20px;
+    }
+
+}
+
+/* Small Devices */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .agency-item .agency--content {
+        padding-left: 290px;
+    }
+    .agency-item .agency--content .pull-right {
+        float: none!important;
+    }
+    .agency-item .agency--content .agency--location {
+        margin-bottom: 20px;
+    }
+    .agency-item .agency--content .agency--social-links {
+        margin-top: 20px;
+    }
+
+}
+
+/*------------------------------------*\
+    #agency-profile
+\*------------------------------------*/
+
+.agency-profile .agency--info {
+    margin: 30px 0;
+}
+
+.agency-profile .agency--profile-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.agency-profile .agency--title {
+    color: @color-heading;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.3;
+    text-transform: capitalize;
+    margin-bottom: 11px;
+}
+
+.agency-profile .agency--location {
+    color: @color-body;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-bottom: 0;
+}
+
+.agency-profile .agency--location i {
+    margin-right: 7px;
+}
+
+.agency-profile .agency--profile-details {
+    padding-top: 62px;
+}
+
+.agency-profile .agency--profile-details p {
+    margin-bottom: 22px;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.agency-profile .agency--profile-contact li {
+    float: left;
+    width: 50%;
+    color: @color-body;
+    font-size: 14px;
+    line-height: 32px;
+}
+
+.agency-profile .agency--profile-contact li span {
+    color: @color-heading;
+    padding-right: 8px;
+}
+
+.agency-profile .agency--social-links a {
+    display: inline-block;
+    font-size: 14px;
+    color: @color-body;
+    margin-right: 17px;
+}
+
+.agency-profile .agency--social-links a:hover {
+    color: @color-heading;
+
+}
+
+.agency-profile .agency--social-links a:last-of-type {
+    margin-right: 0;
+}
+
+
+/* Custom, iPhone Retina */
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .agency-profile .agency--profile-img,
+    .agency-profile .agency--profile-content,
+    .agency-profile .agency--profile-details {
+        max-width: 350px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .agency-profile .agency--profile-details {
+        padding-top: 20px;
+    }
+    .agency-profile .agency--profile-contact li {
+        float: none;
+        width: 100%;
+    }
+
+}
+
+
+/* Custom, iPhone Retina */
+
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+    .agency-profile .agency--profile-contact li {
+        float: none;
+        width: 100%;
+
+    }
+
+}

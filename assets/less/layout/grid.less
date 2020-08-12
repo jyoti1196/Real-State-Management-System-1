@@ -1,0 +1,117 @@
+/*------------------------------------*\
+    #Grid
+\*------------------------------------*/
+
+.row-no-padding [class*="col-"] {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.col-lg-5ths,
+.col-md-5ths,
+.col-sm-5ths,
+.col-xs-5ths {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.col-xs-5ths {
+  width: 20%;
+  float: left;
+}
+@media (min-width: 768px) {
+  .col-sm-5ths {
+    width: 20%;
+    float: left;
+  }
+}
+@media (min-width: 992px) {
+  .col-md-5ths {
+    width: 20%;
+    float: left;
+  }
+}
+@media (min-width: 1200px) {
+  .col-lg-5ths {
+    width: 20%;
+    float: left;
+  }
+}
+.col-content {
+	padding: 120px 100px 110px 120px;
+}
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) and (max-width : 767px) {
+.col-content {
+	padding: 40px !important;
+}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 1300px) {
+	.col-content {
+	//padding: 70px !important;
+}
+}
+
+/* Postion Helpers */
+.pos-fixed {
+  position: fixed;
+}
+
+.pos-relative {
+  position: relative;
+}
+
+.pos-absolute {
+  position: absolute;
+}
+
+.pos-static {
+  position: static;
+}
+
+.pos-top {
+  top: 0;
+}
+
+.pos-bottom {
+  bottom: 0;
+}
+
+.pos-right {
+  right: 0;
+}
+
+.pos-left {
+  left: 0;
+}
+
+.pos-vertical-center {
+  position: relative;
+  top: 50%;
+  
+  -webkit-transform: translateY(-50%);
+-moz-transform:  translateY(-50%);
+	-o-transform:  translateY(-50%);
+	transform:  translateY(-50%);
+}
+
+.height-700 {
+  height: 700px !important;
+}
+
+.height-500 {
+  height: 500px !important;
+}
+.height-800 {
+  height: 800px !important;
+}
+@media only screen and (min-width : 992px) {
+  .hidden-lg,
+  .hidden-md {
+    display: none;
+  }
+}

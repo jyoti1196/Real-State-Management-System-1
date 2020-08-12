@@ -1,0 +1,54 @@
+/*------------------------------------*\
+    #Property City
+\*------------------------------------*/
+
+.property-city-item .property--city-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(0, 0, 0, 0.5)));
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000', GradientType=0);
+}
+
+.property-city-item .property--city-overlay .property--item-content {
+    position: absolute;
+    bottom: 56px;
+    width: 100%;
+}
+
+.property-city-item .property--title {
+    color: @color-white;
+    font-size: 30px;
+    line-height: 1;
+    margin-bottom: 9px;
+    font-weight: 500;
+}
+
+
+.property-city-item .property--numbers {
+    color: @color-white;
+    line-height: 1;
+    margin-bottom: 0;
+}
+
+/* Custom, iPhone Retina */
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+
+    .property-city-item {
+        max-width: 400px;
+        margin-right: auto;
+        margin-left: auto
+    }
+}
+
+/* Small Devices, Tablets */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {}

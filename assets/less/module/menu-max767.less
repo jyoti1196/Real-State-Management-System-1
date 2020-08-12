@@ -1,0 +1,214 @@
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) and (max-width : 767px) {
+	.header .container {
+		padding-right: 0;
+		padding-left: 0;
+	}
+
+	.navbar-nav {
+		margin: 0;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	}
+
+	.navbar-toggle {
+		border-color: @color-white;
+		-moz-border-radius: 0;
+		-webkit-border-radius: 0;
+		border-radius: 0;
+		margin-top: 35px;
+	}
+	
+	.affix .navbar-toggle,
+	.header-light .navbar-toggle{
+		border-color: @color-heading;
+	}
+
+	.navbar-toggle .icon-bar {
+		background-color: @color-white
+	}
+	.affix .navbar-toggle .icon-bar,
+	.header-light .navbar-toggle .icon-bar {
+		background-color: @color-heading
+	}
+
+	.container > .navbar-header {
+		margin-left: 0;
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+
+	.container .navbar-collapse,
+	.container-bordered .navbar-collapse,
+	.container-fluid .navbar-collapse{
+		width: 100%;
+		background-color: @color-heading;
+		margin-right: 0;
+		margin-left: 0;
+	}
+
+	.navbar-nav > li {
+		height: auto !important;
+		margin-right: 0;
+	}
+
+	.navbar-nav > li.pull-left {
+		float: none !important;
+	}
+
+	.navbar-nav li a {
+		line-height: 36px;
+		color: @color-white;
+		padding-right: 0;
+		padding-left: 10px;
+		padding-top: 0;
+	}
+
+	.navbar-nav > li > .menu-item:before {
+		display: none;
+	}
+
+	ul ul {
+		list-style: none;
+	}
+
+	ul.dropdown-menu li a,
+	ul.mega-menu,
+	ul.mega-menu li ul li a {
+		background-color: transparent;
+		position: relative;
+		padding: 0;
+	}
+
+	.navbar-nav > li.has-dropdown > a:after,
+	li.dropdown-submenu > a:after {
+		font-family: @awesome;
+		content: "\f105";
+		font-size: 13px;
+		position: absolute;
+		right: 10px;
+	}
+
+	.navbar-nav > li.has-dropdown.open > a,
+	.navbar-nav > li.has-dropdown.open > a:focus,
+	.navbar-nav > li.has-dropdown.open > a:hover {
+		background-color: transparent;
+		border: none;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	}
+
+	li.dropdown-submenu.open > ul > li > a {
+		padding-left: 50px !important;
+	}
+
+	.navbar-nav > li.has-dropdown.open > a:after,
+	.navbar-nav > li.has-dropdown.open > a:focus:after,
+	.navbar-nav > li.has-dropdown.open > a:hover:after,
+	li.dropdown-submenu.open > a:after,
+	li.dropdown-submenu.open > a:focus:after,
+	li.dropdown-submenu.open > a:hover:after {
+		font-family: @awesome;
+		content: "\f107";
+		font-size: 13px;
+		position: absolute;
+		right: 10px;
+	}
+
+	li.dropdown-submenu > a:after,
+	li.dropdown-submenu.open > a:focus:after,
+	li.dropdown-submenu.open > a:hover:after {
+		right: 10px;
+	}
+
+	.dropdown-menu > li > a:focus,
+	.dropdown-menu > li > a:hover,
+	.mega-menu li a:focus,
+	.mega-menu li a:hover,
+	.nav > li > a:focus,
+	.nav > li > a:hover {
+		background-color: transparent;
+	}
+
+	.dropdown-menu > li > a,
+	.mega-menu > li > a {
+		color: @color-white
+	}
+
+	.mega-menu ul {
+		list-style: none;
+		padding-left: 25px;
+	}
+
+	.mega-menu ul li {
+		padding-top: 5px;
+	}
+
+	.dropdown-menu > li > a:focus,
+	.dropdown-menu > li > a:hover,
+	.mega-menu li a:focus,
+	.mega-menu li a:hover {
+		color: @color-white
+	}
+
+	ul.mega-menu {
+		list-style: none;
+		display: none;
+	}
+
+	.dropdown-submenu.open > .mega-menu,
+	.has-dropdown.open > .mega-menu {
+		display: block;
+	}
+
+	.dropdown-submenu.open > .mega-menu ul {
+		padding-left: 50px;
+	}
+
+	.header-fixed .navbar.affix .module .module-icon i,
+	.header-fixed .navbar.affix .navbar-nav > li > a {
+		color: @color-white;
+	}
+
+	.mega-dropdown-menu .container a[href='#'] {
+		color: @color-theme;
+		cursor: default;
+		margin-left: 10px;
+		padding: 0;
+		font-weight: 700;
+		text-transform: capitalize;
+	}
+
+	li.has-dropdown > ul.dropdown-menu > li.dropdown-submenu > a:before,
+	ul.dropdown-menu > li.has-dropdown > a:before {
+		display: none;
+	}
+
+	.navbar.navbar--dark .module .module-icon i,
+	.navbar.navbar--dark .navbar-nav > li > a {
+		color: @color-white
+	}
+
+	.mega-dropdown-menu li ul li a i {
+    margin-right: 8px;
+}
+	.header-3 .navbar-nav{
+		margin-right: 0;
+		border-right: none;
+	}
+	.header-light .navbar .module .module-icon i, 
+	.header-light .navbar .navbar-nav > li > a{
+		color:@color-white
+	}
+	.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header{
+		margin-right: 0;
+		margin-left: 0;
+	}
+	.header-5 .container-fluid{
+		padding-right: 15px;
+	}
+	.header-6 .navbar-nav > li > a {
+     padding-right: 0;
+     padding-left: 10px;
+    border-left: none;
+    line-height: 36px; 
+}
+}

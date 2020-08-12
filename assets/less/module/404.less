@@ -1,0 +1,74 @@
+/*------------------------------------*\
+    #404
+\*------------------------------------*/
+
+.page-404 {
+    height: 100vh;
+    margin-top: -100px
+}
+
+.page-404 img {
+    margin-bottom: 42px;
+}
+
+.page-404 h3 {
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 1.1;
+    color: @color-white;
+    margin-bottom: 38px;
+}
+
+.page-404 p {
+    color: @color-white;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 0;
+}
+
+.page-404 p a {
+    color: @color-white;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.page-404 p a:hover {
+    color: @color-theme;
+}
+
+.page-404 p a:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 100%;
+    background-color: @color-white;
+}
+
+.page-404 p a:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 0;
+    background-color: @color-theme;
+    transition: all 400ms linear;
+}
+
+.page-404 p a:hover:after {
+    width: 100%;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .page-404 {
+        padding-top: 160px;
+    }
+    .page-404 h3 {
+        font-size: 34px;
+        line-height: 50px;
+
+    }
+}

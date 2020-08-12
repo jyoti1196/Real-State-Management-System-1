@@ -1,0 +1,131 @@
+/*------------------------------------*\
+    #BACKGROUNDS
+\*------------------------------------*/
+
+.bg-theme {
+    background-color: @color-theme !important
+}
+
+.bg-gray {
+    background-color: @color-gray !important;
+}
+
+.bg-white {
+    background-color: @color-white !important
+}
+
+.bg-dark {
+    background-color: #232323 !important
+}
+
+.bg-dark2 {
+    background-color: #282828 !important;
+}
+
+.bg-dark3 {
+    background-color: #373636 !important;
+}
+
+.bg-secondary {
+    background-color: @color-secondary;
+}
+
+.wrapper-bg {
+    background-color: #f2f7ff;
+}
+
+/* Background Image */
+
+.bg-section {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /*background-attachment: fixed;*/
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+}
+
+.bg-parallex {
+    background-attachment: fixed;
+}
+
+.bg-overlay:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.bg-overlay-light:before {
+    background-color: @color-white;
+    opacity: 0.8;
+}
+
+.bg-overlay-dark:before {
+    background-color: rgba(52, 73, 94, 0.97)
+}
+
+.bg-overlay-dark2:before {
+    background-color: rgba(52, 73, 94, 0.7)
+}
+
+.bg-overlay-dark3:before {
+    background-color: rgba(52, 73, 94, 0.4)
+}
+
+.bg-overlay-gradient:before {
+ 
+     background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(0, 0, 0, 0.5)));
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000', GradientType=0);
+}
+
+/* Background Video */
+
+.bg-video {
+    position: relative;
+}
+
+.bg-video .bg-player {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: url(polina.jpg) no-repeat;
+    min-height: 500px;
+}
+
+.bg-video .vidbg {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.bg-vyoutube {
+    z-index: 550;
+    text-align: center;
+    height: 100%;
+    min-height: 100%;
+    position: relative;
+    overflow: hidden
+}
+
+.bg-gray2 {
+    background-color: #f8f9fa;
+}

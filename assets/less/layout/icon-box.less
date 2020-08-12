@@ -1,0 +1,88 @@
+/*------------------------------------*\
+    #FEATRUE BOX
+\*------------------------------------*/
+/* Feature #8 */
+
+.feature-box {
+	text-align: center;
+	margin-bottom: 0;
+}
+
+.feature-box .feature-heading h3 {
+	color: @color-gray;
+	font-size: 17px;
+	font-weight: 500;
+	line-height: 1;
+}
+
+.feature-box .feature-icon {
+	position: relative;
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	background-color: @color-gray;
+	border-radius: 1px;
+	color: @color-white;
+	font-size: 28px;
+	font-weight: 400;
+	text-align: center;
+	margin: 0 auto 20px;
+	overflow: hidden;
+}
+
+.feature-box .feature-icon i {
+	position: relative;
+	display: block;
+	line-height: 60px;
+	.transition(0.3s, ease);
+}
+
+.feature-box:hover .feature-icon i:first-child {
+	margin-top: -60px;
+}
+
+.feature-box .feature-body p {
+	margin-bottom: 0;
+}
+/* Feature Box #2 */
+
+.fbox-2 .feature-icon {
+	float: left;
+}
+
+.fbox-2 .feature-body,
+.fbox-2 .feature-heading {
+	padding-left: 80px;
+	text-align: left;
+}
+/* Feature Box #3 */
+
+.fbox-3 .feature-icon {
+	float: right;
+}
+
+.fbox-3 .feature-body,
+.fbox-3 .feature-heading {
+	padding-right: 80px;
+	text-align: right;
+}
+/* Feature Box borderd */
+
+.fbox-bordered .feature-icon {
+	background-color: transparent;
+	border: 1px solid @color-gray;
+	color: @color-gray
+}
+/* Feature Box Circle */
+
+.fbox-circle .feature-icon {
+	border-radius: 50%;
+}
+/* Feature Box Circle  bordered */
+
+.fbox-circle.fb-bordered .feature-icon {
+	border-radius: 50%;
+	background-color: transparent !important;
+	border: 2px solid @color-gray;
+	color: @color-gray
+}

@@ -1,0 +1,29 @@
+/*------------------------------------*\
+    #MODALS
+\*------------------------------------*/
+body.modal-open {
+    padding-right: 0 !important
+}
+
+.modal {
+    z-index: 1080;
+    background: rgba(34, 34, 34, 0.5)
+}
+
+.modal::-webkit-scrollbar {
+    display: none;
+    width: 0px;
+    /* remove scrollbar space */
+    background: transparent;
+    /* optional: just make scrollbar invisible */
+}
+
+.modal-backdrop {
+    z-index: 1020;
+    background-color: @color-heading;
+    display: none;
+}
+
+.modal-dialog {
+    margin-top: 80px;
+}

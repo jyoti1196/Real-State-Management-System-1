@@ -1,0 +1,194 @@
+/*------------------------------------*\
+    #agent
+\*------------------------------------*/
+
+.agent {
+    text-align: center;
+    overflow: hidden;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.agent .agent--img {
+    position: relative;
+    margin-bottom: 26px;
+    overflow: hidden;
+}
+
+.agent .agent--img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.agent .agent--details {
+    background-color: #64ddbb;
+    width: 100%;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    .rounded(4px);
+    position: absolute;
+    left: 0;
+    bottom: -200%;
+    padding: 31px 35px 37px;
+}
+
+.agent:hover .agent--details {
+    bottom: 0;
+}
+
+.agent .agent--details p {
+    color: @color-white;
+    margin-bottom: 23px;
+
+}
+
+.agent .agent--details .agent--social-links a {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    margin-right: 20px;
+}
+
+.agent .agent--details .agent--social-links a:hover {
+    color: @color-heading;
+}
+
+.agent .agent--details a:last-child {
+    margin-right: 0;
+}
+
+.agent .agent--details a:hover {
+    color: @color-white;
+}
+
+.agent .agent--title {
+    color: @color-heading;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.3;
+    text-transform: capitalize;
+    margin-bottom: 6px;
+}
+
+.agent .agent--position {
+    color: @color-body;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-bottom: 0;
+}
+
+
+/* Custom, iPhone Retina */
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .agent {
+        margin-bottom: 40px;
+        max-width: 350px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .agent .agent--details {
+        padding: 20px
+    }
+}
+
+/*------------------------------------*\
+    #Agent Profile
+\*------------------------------------*/
+
+.agent-profile .agent--info {
+    margin: 10px 0 30px;
+}
+
+.agent-profile .agent--title {
+    color: @color-heading;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.3;
+    text-transform: capitalize;
+    margin-bottom: 11px;
+}
+
+.agent-profile .agent--position {
+    color: @color-body;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-bottom: 0;
+}
+
+
+.agent-profile .agent--profile-details p {
+    margin-bottom: 24px;
+}
+
+.agent-profile .agent--profile-contact li {
+    float: left;
+    width: 50%;
+    color: @color-body;
+    font-size: 14px;
+    line-height: 32px;
+}
+
+.agent-profile .agent--profile-contact li span {
+    color: @color-heading;
+    padding-right: 8px;
+}
+
+.agent--social-links a {
+    display: inline-block;
+    font-size: 14px;
+    color: @color-body;
+    margin-right: 17px;
+}
+
+.agent--social-links a:hover {
+    color: @color-heading;
+
+}
+
+.agent--social-links a:last-of-type {
+    margin-right: 0;
+}
+
+.agent-profile .agent--profile-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* small Devices*/
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .agent-profile .agent--profile-content,
+    .agent-profile .agent--profile-img {
+        max-width: 350px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .agent-profile .agent--profile-contact li {
+        float: none;
+        width: 100%;
+
+    }
+
+}
+
+/* Small Devices, Tablets */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .agent-profile .agent--profile-contact li {
+        float: none;
+        width: 100%;
+
+    }
+}

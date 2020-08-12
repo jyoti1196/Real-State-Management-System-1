@@ -1,0 +1,38 @@
+/*------------------------------------*\
+    #BREADCRUMB
+\*------------------------------------*/
+/* Breadcrumb Style 1 */
+.breadcrumb {
+	background-color: transparent;
+	margin-bottom: 0;
+	padding: 0;
+	border-radius: 0;
+	color: #e5e4e4;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1;
+	text-transform: capitalize;
+}
+
+.breadcrumb > li + li:before,
+.breadcrumb > li a {
+	color: #e5e4e4;
+}
+
+.breadcrumb > .active {
+	color: @color-gray;
+}
+
+.breadcrumb-2 > li + li:before {
+	content: "\f101";
+	font-family: @awesome
+}
+
+.breadcrumb-3 > li + li:before {
+	content: "\f105";
+	font-family: @awesome
+}
+
+.breadcrumb > li a:hover {
+	color: @color-theme;
+}

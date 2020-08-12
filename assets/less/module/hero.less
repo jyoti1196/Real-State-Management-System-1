@@ -1,0 +1,225 @@
+/*------------------------------------*\
+    #Hero
+\*------------------------------------*/
+
+.hero-vertical-center {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 3;
+    width: 100%;
+}
+
+/* Hero Map */
+
+.hero-splash {
+    height: 100vh;
+    overflow: hidden;
+    margin-top: -100px;
+}
+
+.hero-map {
+    position: relative;
+}
+
+.hero-map #googleMap {
+    width: 100%;
+    height: 630px;
+}
+
+.hero-map .form-box {
+    margin-bottom: 0
+}
+
+.hero-map .search-properties {
+    position: absolute;
+    bottom: 85px;
+    left: 0;
+    width: 100%;
+}
+
+.hero-map .search-properties .input-icon .form-control {
+    padding-left: 37px;
+}
+
+.hero-map .search-properties .input-icon i {
+    position: absolute;
+    top: 15px;
+    left: 20px
+}
+
+.hero-map .less--options {
+    position: relative;
+    padding-left: 15px;
+    font-size: 11px;
+    line-height: 20px;
+    margin-top: -20px;
+    display: block;
+    background-color: @color-white
+}
+
+.hero-map .less--options:before {
+    content: "\f068";
+    font-family: fontawesome;
+    position: absolute;
+    top: 2px;
+    left: 0;
+}
+
+.hero-map .less--options.active:before {
+    content: "\f067";
+}
+
+/* Hero Search */
+
+.hero-search {
+    position: relative
+}
+
+.hero-search .slide--item,
+.hero-search .carousel {
+    height: 100vh;
+    position: relative;
+}
+
+.hero-search .slider--content {
+    width: 100%;
+    position: absolute;
+    top: 220px;
+    left: 0;
+    z-index: 2;
+}
+
+.hero-search .slider--content h1 {
+    font-size: 50px;
+    font-weight: 500;
+    color: @color-white;
+    margin-bottom: 70px;
+}
+
+.hero-search .less--options {
+    position: relative;
+    padding-left: 15px;
+    font-size: 11px;
+    margin-top: -20px;
+    display: block;
+    background-color: @color-white;
+    line-height: 20px;
+}
+
+.hero-search .less--options:before {
+    content: "\f067";
+    font-family: fontawesome;
+    position: absolute;
+    top: 2px;
+    left: 0;
+}
+
+.hero-search .btn {
+    margin-bottom: 30px;
+}
+
+.hero-search .less--options.active:before {
+    content: "\f068";
+}
+
+.hero-search .slider--content h1 {
+    font-size: 50px;
+    font-weight: 500;
+    color: @color-white
+}
+
+.hero-search .search-properties {
+    position: static;
+}
+
+.hero-search .option-hide {
+    display: none;
+}
+
+/* Hero Slider */
+
+.property-info-slider .property-item .property--title {
+    font-size: 24px;
+}
+
+.property-info-slider .property-item .property--location {
+    margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .hero-map #googleMap {
+        height: 930px;
+    }
+    .hero-search {
+        min-height: 600px;
+        height: 600px;
+    }
+    .hero-search .slider--content {
+        top: 120px;
+    }
+    .hero-search .slider--content form,
+    .hero-search .slider--content form .form-box {
+        padding: 20px;
+    }
+    .hero-search .owl-nav {
+        display: none;
+    }
+    .hero-search .less--options {
+        display: none
+    }
+    .hero-search .search-properties {
+        display: block;
+    }
+    .hero-search .slider--content h1 {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    .hero-search .form-group {
+        margin-bottom: 10px
+    }
+    .hero-splash {
+        height: auto;
+    }
+    .hero-map .search-properties {
+        top: 150px;
+    }
+    .property-info-slider .slide--item {
+        height: 700px;
+
+    }
+    .property-info-slider .property-item {
+        margin-top: 60px;
+        max-width: 240px;
+    }
+    .property-info-slider .property--info {
+        padding: 20px;
+    }
+    .property-info-slider .property-item .property--title {
+        font-size: 16px;
+    }
+
+}
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    .hero-search .slider--content {
+        top: 150px;
+    }
+    .hero-search .slider--content h1 {
+        margin-bottom: 0;
+        font-size: 30px;
+    }
+    .hero-search .search-properties {
+        padding: 30px;
+    }
+    .hero-search form {
+        padding: 30px;
+    }
+}

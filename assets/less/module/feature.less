@@ -1,0 +1,83 @@
+/*------------------------------------*\
+    #Features
+\*------------------------------------*/
+
+.feature-panel {
+    position: relative;
+}
+
+.feature-panel .feature--icon {
+    margin-bottom: 38px;
+}
+
+.feature-panel .feature--content h3 {
+    color: @color-heading;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1;
+    margin-bottom: 19px;
+    text-transform: capitalize;
+}
+
+.feature-panel .feature--content p {
+    line-height: 26px;
+    margin-bottom: 0;
+}
+
+
+.feature-left .feature-panel {
+    margin-bottom: 67px;
+}
+
+.feature-left .feature-panel .feature--icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-bottom: 0;
+}
+
+.feature-left .feature-panel .feature--content {
+    padding-left: 75px;
+}
+
+/* feature #1 */
+
+.feature-1 .feature-panel:after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    right: -80px;
+    display: inline-block;
+    width: 135px;
+    height: 3px;
+    background-image: url(../images/features/icons/divider.png);
+}
+
+.feature-1 [class*="col-"]:last-of-type .feature-panel:after {
+    display: none;
+}
+
+/* Custom, iPhone Retina */
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .feature-panel {
+        margin-bottom: 20px;
+    }
+    .feature-1 .feature-panel:after {
+        display: none;
+    }
+    .feature-left .feature-panel {
+        max-width: 400px;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center
+    }
+    .feature-left .feature-panel .feature--icon {
+        position: relative;
+        margin: 0 auto 30px auto;
+        text-align: center
+    }
+    .feature-left .feature-panel .feature--content {
+        padding-left: 0;
+    }
+}

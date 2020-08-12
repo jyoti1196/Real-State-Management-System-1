@@ -1,0 +1,58 @@
+/*------------------------------------*\
+    #BACK TO TOP
+\*------------------------------------*/
+
+#back-to-top {
+	z-index: 9999;
+	position: fixed;
+	right: 30px;
+	bottom: 30px;
+	opacity: 0;
+}
+
+.backtop {
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: @color-white;
+	cursor: pointer;
+	border-radius: 2px;
+	transition: opacity 0.2s ease-out;
+	background-color: rgba(0,0,0,0.4);
+	font-size: 20px;
+}
+
+#back-to-top.show {
+	opacity: 1;
+}
+
+#back-to-top:hover {
+	background-color: @color-theme
+}
+/* Style 2 */
+
+.backtop.style-2 {
+	border-radius: 0;
+}
+/* Style 4*/
+
+.backtop.style-3 {
+	border-radius: 5px;
+}
+/* Style 4*/
+
+.backtop.style-4 {
+	border-radius: 50%;
+}
+
+.back-top-styles .backtop {
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+}
+@media only screen and (max-width : 992px) {
+	#back-to-top.show {
+		opacity: 0;
+	}
+}

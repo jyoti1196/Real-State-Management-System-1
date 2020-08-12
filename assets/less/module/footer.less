@@ -1,0 +1,196 @@
+/*------------------------------------*\
+    #Footer
+\*------------------------------------*/
+
+.footer {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+/* Footer Widgets */
+
+.footer-widget {
+    padding-top: 125px;
+    padding-bottom: 90px;
+}
+
+.footer-widget .widget--title h5 {
+    font-family: @font-body;
+    color: @color-heading;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: 27px;
+}
+
+
+.footer-widget .footer--logo {
+    margin-bottom: 44px;
+}
+
+.footer-widget .widget--about p {
+    font-size: 14px;
+    line-height: 26px;
+    margin-bottom: 30px;
+    color: @color-body
+}
+
+.footer-widget .widget--about ul li {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: @color-heading;
+    margin-bottom: 4px;
+    display: block;
+}
+
+.footer-widget .widget--about ul li:last-of-type {
+    margin-bottom: 0;
+}
+
+.footer-widget .widget--links ul li a {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: @color-body;
+    margin-bottom: 9px;
+    display: block;
+}
+
+.footer-widget .widget--links ul li a:hover {
+    color: @color-theme
+}
+
+.footer-widget .widget--links ul li:last-of-type a {
+    margin-bottom: 0;
+
+}
+
+.footer-widget .widget--newsletter .newsletter--form {
+    position: relative;
+}
+
+.footer-widget .widget--newsletter .form-control {
+    background-color: #f8f8f8;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #eeeeee;
+    font-size: 14px;
+    color: @color-body;
+    height: 42px;
+}
+
+.footer-widget .widget--newsletter button {
+    background-color: transparent;
+    line-height: 40px;
+    color: @color-heading;
+    font-size: 12px;
+    font-weight: 600;
+    position: absolute;
+    top: 2px;
+    right: 20px;
+    cursor: pointer;
+    border: none;
+    height: auto;
+    padding: 0;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+.footer-widget .widget--newsletter:hover button {
+    -webkit-transform: translateX(7px);
+    transform: translateX(7px);
+}
+
+.footer-widget .widget--newsletter h6 {
+    line-height: 1;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-bottom: 24px;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 33px;
+    height: 33px;
+    line-height: 33px;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 10px;
+    background-color: #f5f5f5;
+    font-size: 12px;
+    color: #bdbdbd;
+}
+
+.social-icons a:hover {
+    color: @color-heading
+}
+
+.social-icons a:last-of-type {
+    margin-right: 0;
+}
+
+/* Footer Bar */
+
+.footer--bar {
+    border-top: 1px solid #eeeeee;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+
+
+.footer--copyright span {
+    color: @color-body;
+    font-size: 14px;
+    line-height: 24px;
+    display: block;
+}
+
+.footer--copyright span a {
+    color: @color-body;
+
+}
+
+/* Custom, iPhone Retina */
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .footer-widget {
+        padding-top: 38px;
+        padding-bottom: 30px;
+    }
+
+    .widget--about,
+    .widget--links {
+        margin-bottom: 25px;
+    }
+    .footer-widget .widget--title h5 {
+        margin-bottom: 15px;
+    }
+
+    .footer--copyright {
+        padding-top: 20px;
+    }
+
+}
+
+/* Custom, iPhone Retina */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .widget--about,
+    .widget--links {
+        margin-bottom: 25px;
+    }
+    .footer-widget .widget--title h5 {
+        margin-bottom: 15px;
+    }
+
+    .footer--copyright {
+        padding-top: 20px;
+    }
+
+}

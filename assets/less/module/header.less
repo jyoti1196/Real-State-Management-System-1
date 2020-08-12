@@ -1,0 +1,31 @@
+/*------------------------------------*\
+    #HEADER
+\*------------------------------------*/
+
+.header {
+    height: 100px;
+}
+
+.header-transparent {
+    background-color: transparent;
+}
+
+.header-transparent + .mtop-100,
+.header-transparent + .page-title,
+.header-transparent + section {
+    position: relative;
+    margin-top: -100px;
+}
+
+
+/* Transparent Header */
+
+.transparent-header .module .module-icon > i {
+    color: @color-white
+}
+
+.static-affix {
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}

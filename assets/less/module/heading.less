@@ -1,0 +1,59 @@
+/*------------------------------------*\
+    #Heading
+\*------------------------------------*/
+
+.heading .heading--subtitle {
+    font-family: @font-body;
+    color: #999ea8;
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 15px;
+    letter-spacing: 0.3px;
+}
+
+.heading .heading--title {
+    font-family: @font-heading;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 45px;
+    margin-bottom: 17px;
+    color: @color-heading;
+}
+
+.heading .heading--desc {
+    font-family: @font-body;
+    color: @color-body;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 0;
+}
+
+.heading .divider--line + .heading--desc {
+    margin-top: 25px;
+}
+
+.heading-2 .heading--title {
+    font-size: 30px;
+    line-height: 1;
+    margin-bottom: 20px
+}
+
+.heading-3 .heading--title {
+    font-size: 30px;
+    line-height: 45px;
+    margin-bottom: 20px
+}
+
+/* Custom, iPhone Retina */
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .heading .heading--title {
+        text-align: center
+    }
+}
+
+/* Small Devices, Tablets */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {}

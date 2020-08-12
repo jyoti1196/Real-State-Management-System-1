@@ -1,0 +1,290 @@
+/*------------------------------------*\
+    #Carousel
+\*------------------------------------*/
+
+.owl-carousel .owl-item img {
+    width: 100%
+}
+
+.carousel-dots .owl-controls {
+    margin-top: 50px;
+}
+
+.carousel-dots .owl-controls .owl-dots{
+	height: 8px;
+}
+
+.carousel-dots .owl-controls .owl-dots .owl-dot span {
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: rgba(52, 73, 94, 0.3);
+    border: none;
+    margin: 0 4px;
+}
+
+.carousel-dots .owl-controls .owl-dots .owl-dot.active span {
+    background-color: @color-heading;
+    width: 9px;
+    height: 9px;
+    border: none;
+
+}
+
+
+.carousel-dots.carousel-theme .owl-controls .owl-dots .owl-dot.active span {
+    background-color: @color-theme;
+    border-color: @color-theme;
+}
+
+.carousel-dots.carousel-white .owl-controls .owl-dots .owl-dot.active span {
+    background-color: @color-white;
+    border-color: @color-white;
+}
+
+.carousel-navs .owl-controls .owl-nav {
+    position: relative;
+}
+
+.carousel-navs .owl-controls .owl-nav [class*=owl-] {
+    position: absolute;
+    top: 50%;
+    height: 60px;
+    line-height: 60px;
+    color: @color-heading;
+    font-size: 0;
+    font-weight: 400;
+    text-align: center;
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    -o-transition: all 0.35s;
+    transition: all 0.35s;
+    margin-top: -250px;
+}
+
+.carousel-navs .owl-controls .owl-nav [class*=owl-]:hover {
+    color: @color-theme;
+    background-color: transparent;
+}
+
+.carousel-navs .owl-controls .owl-nav .owl-prev {
+    left: 0;
+}
+
+.carousel-navs .owl-controls .owl-nav .owl-prev:before {
+    font-family: 'Linearicons-Free';
+    content: "\e875";
+    font-size: 40px;
+}
+
+.carousel-navs .owl-controls .owl-nav .owl-next {
+    right: 0;
+}
+
+.carousel-navs .owl-controls .owl-nav .owl-next:before {
+    font-family: 'Linearicons-Free';
+    content: "\e876";
+    font-size: 40px;
+}
+
+.carousel-navs .owl-dots {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+}
+
+.carousel-navs .owl-dots .owl-dot span {
+    background-color: transparent;
+    border: 1px solid @color-white;
+}
+
+.carousel-navs .owl-dots .owl-dot.active span,
+.carousel-navs .owl-dots .owl-dot:hover span {
+    background: @color-white;
+}
+
+/**/
+
+.slider-dots .owl-controls {
+    margin-top: 0;
+}
+
+.slider-dots .owl-controls .owl-dots {
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+}
+
+.slider-dots .owl-controls .owl-dots .owl-dot span {
+    height: 11px;
+    width: 11px;
+    border-radius: 50%;
+    background-color: @color-white;
+    border: 2px solid rgba(0, 0, 0, .6);
+    margin: 0 4px;
+}
+
+.slider-dots .owl-controls .owl-dots .owl-dot.active span {
+    -moz-box-shadow: 0 0 0 2px @color-dark3;
+    -webkit-box-shadow: 0 0 0 2px @color-dark3;
+    box-shadow: 0 0 0 2px @color-white;
+}
+
+.slider-navs .owl-controls .owl-nav [class*=owl-] {
+    position: absolute;
+    top: 50%;
+    height: 100px;
+    width: 40px;
+    line-height: 100px;
+    margin: -50px 0 0 0;
+    color: @color-white;
+    font-size: 0;
+    font-weight: 400;
+    background-color: @color-heading;
+    text-align: center;
+    padding: 0;
+    border-radius: 0;
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    -o-transition: all 0.35s;
+    transition: all 0.35s;
+    z-index: 6
+}
+
+.slider-navs .owl-controls .owl-nav [class*=owl-]:hover {
+    background-color: rgba(52, 73, 94, 0.8)
+}
+
+.slider-navs .owl-controls .owl-nav .owl-prev {
+    left: 0;
+}
+
+.slider-navs .owl-controls .owl-nav .owl-next:before,
+.slider-navs .owl-controls .owl-nav .owl-prev:before {
+    font-family: @awesome;
+    font-size: 25px;
+}
+
+.slider-navs .owl-controls .owl-nav .owl-prev:before {
+    content: "\f104";
+}
+
+.slider-navs .owl-controls .owl-nav .owl-next {
+    right: 0;
+}
+
+.slider-navs .owl-controls .owl-nav .owl-next:before {
+    content: "\f105";
+}
+
+.slider-navs .owl-dots {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+}
+
+.slider-navs .owl-dots .owl-dot span {
+    background-color: transparent;
+    border: 1px solid @color-white;
+}
+
+.slider-navs .owl-dots .owl-dot.active span,
+.slider-navs .owl-dots .owl-dot:hover span {
+    background: @color-white;
+}
+
+.slider-navs.slider-shop .owl-controls .owl-dots .owl-dot span {
+    background-color: @color-dark3;
+    border: 2px solid @color-white;
+}
+
+.slider-navs.slider-shop .owl-controls .owl-dots .owl-dot.active span {
+    -moz-box-shadow: 0 0 0 2px @color-dark3;
+    -webkit-box-shadow: 0 0 0 2px @color-dark3;
+    box-shadow: 0 0 0 2px @color-dark3;
+}
+
+.slider-theme.slider-navs .owl-controls .owl-nav [class*=owl-]:hover {
+    color: @color-heading;
+}
+
+.slider-theme.slider-dots .owl-controls .owl-dots .owl-dot span {
+    border-color: @color-theme
+}
+
+.carousel-thumbs.slider-navs .owl-controls .owl-nav [class*=owl-] {
+    width: 30px;
+    height: 70px;
+    line-height: 70px;
+    margin-top: -35px;
+}
+
+.carousel-thumbs.slider-navs .owl-controls .owl-nav .owl-next:before,
+.carousel-thumbs.slider-navs .owl-controls .owl-nav .owl-prev:before {
+    font-size: 18px;
+}
+
+/* Custom, iPhone Retina */
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .carousel-dots .owl-controls {
+        margin-top: 20px;
+    }
+
+    .slider-navs .owl-controls .owl-nav .owl-prev {
+        left: 0;
+    }
+
+    .slider-navs .owl-controls .owl-nav .owl-next {
+        right: 0;
+    }
+
+    .slider-navs .owl-controls .owl-nav .owl-next:before,
+    .slider-navs .owl-controls .owl-nav .owl-prev:before {
+        font-size: 20px;
+    }
+}
+
+/* Small Devices, Tablets */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .slider-navs .owl-controls .owl-nav .owl-next:before,
+    .slider-navs .owl-controls .owl-nav .owl-prev:before {
+        font-size: 30px;
+    }
+}
+
+.owl-thumbs {
+    margin-top: 0;
+}
+
+.owl-thumbs .owl-thumb-item {
+    border: none;
+    background-color: transparent;
+    padding-right: 2px;
+    padding-left: 2px;
+    max-width: 130px;
+}
+
+.owl-thumbs .owl-thumb-item:last-of-type {
+    padding-right: 0;
+}
+
+.owl-thumbs .owl-thumb-item:first-of-type {
+    padding-left: 0;
+}
+
+.owl-thumbs .owl-thumb-item:last-of-type {
+    padding-right: 0;
+}
+
+.owl-thumb-item img {
+    opacity: 0.8;
+}
+
+.owl-thumb-item.active img {
+    opacity: 1;
+}

@@ -1,0 +1,127 @@
+/*------------------------------------*\
+    #Accordion
+\*------------------------------------*/
+.collapsing {
+    transition: height 0.6s;
+}
+/* Accordion Base */
+
+.panel {
+    border: none
+}
+
+.accordion .panel {
+    margin-bottom: 20px;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+
+}
+
+.accordion .panel .panel--heading {
+    padding: 12px 20px ;
+    background-color: #f8f8f8;
+    border: 1px solid #eee;
+    .rounded(3px);
+}
+
+.accordion .panel .panel--heading a {
+    font-family: @font-heading;
+    font-size: 18px;
+    color: @color-heading;
+    font-weight: 500;
+    line-height: 28px;
+    text-transform: capitalize;
+    position: relative;
+    display: block;
+}
+
+.accordion .panel .panel--heading a.collapsed {
+    color: @color-secondary;
+}
+
+.accordion .panel .panel--body {
+    padding: 22px 20px 0;
+     font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+/* Accordion Status */
+
+.accordion .panel--heading .accordion-toggle:after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    content: "\f068";
+    /* symbol for "opening" panels */
+    font-family: fontawesome;
+    font-size: 14px;
+    color: @color-theme;
+    background-color: transparent;
+    border: 1px none;
+    text-align: center;
+ 
+    line-height: 20px;
+    -moz-border-radius: 1px;
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+}
+
+.accordion .panel--heading .accordion-toggle.collapsed:after {
+    content: "\f067";
+    /* symbol for "collapsed" panels */
+    color: @color-theme;
+    background-color: transparent;
+    border: none
+}
+
+.accordion .panel--heading .accordion-toggle.collapsed:after {
+    content: "\f067";
+    color: @color-theme;
+    background-color: transparent;
+    border: none
+}
+
+/* Accordion Style #1 */
+
+.accordion.accordion-1 .panel--heading a {
+    padding-left: 0;
+}
+
+/* Accordion Style #2 */
+
+.accordion-2 .panel {
+    border: 1px solid #eee;
+    background-color: transparent;
+}
+
+.accordion.accordion-2 .panel--heading .accordion-toggle.collapsed:after {
+    content: "\f067";
+    color: @color-secondary;
+    background-color: transparent;
+    border: 1px solid @color-secondary
+}
+
+/* Accordion Style #3 */
+
+.accordion.accordion-3 {
+    border: none;
+    background-color: transparent;
+}
+
+.accordion.accordion-3 .panel {
+    border: none;
+    background-color: @color-white;
+    -webkit-box-shadow: 0px 2px 3px 0px rgba(40, 40, 40, 0.06);
+    -moz-box-shadow: 0px 2px 3px 0px rgba(40, 40, 40, 0.06);
+    -o-box-shadow: 0px 2px 3px 0px rgba(40, 40, 40, 0.06);
+    box-shadow: 0px 2px 3px 0px rgba(40, 40, 40, 0.06);
+}
+
+/* Accordion Style #4 */
+
+.accordion.accordion-4 .panel {
+    border: none;
+    background-color: #f4f4f4;
+}

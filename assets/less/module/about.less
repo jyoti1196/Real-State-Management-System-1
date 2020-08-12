@@ -1,0 +1,48 @@
+/*------------------------------------*\
+    #About
+\*------------------------------------*/
+
+.about .heading-2 {
+    margin: 88px 0 55px;
+}
+
+.about .about--panel {
+    margin-bottom: 40px;
+}
+
+.about .about--panel h3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: @color-heading;
+    margin-bottom: 19px;
+}
+
+/* Custom, iPhone Retina */
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .about .about--img img {
+        margin: 0 auto;
+        text-align: center
+    }
+    .about .about--panel {
+        max-width: 400px;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center
+    }
+}
+
+/* Small Devices, Tablets */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .about .heading-2 {
+        margin: 0;
+    }
+    .about .heading-2 .heading--title {
+        font-size: 22px;
+        line-height: 36px;
+    }
+    .about .about--panel {
+        margin-bottom: 0;
+    }
+}

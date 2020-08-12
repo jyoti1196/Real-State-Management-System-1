@@ -1,0 +1,402 @@
+/*------------------------------------*\
+	#Widgets
+\*------------------------------------*/
+
+.widget {
+    margin-bottom: 30px;
+    background-color: @color-white;
+    padding: 40px;
+    .rounded(4px);
+}
+
+.widget:last-of-type {
+    margin-bottom: 0;
+}
+
+/* Widget */
+
+.widget .widget--title {
+    margin-bottom: 35px;
+}
+
+.widget .widget--title h5 {
+    font-family: @font-body;
+    color: @color-heading;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1;
+    text-transform: capitalize;
+    margin-bottom: 0;
+}
+
+
+
+/* Category Widget */
+
+.widget-categories ul li a {
+    color: @color-body;
+    font-size: 14px;
+    line-height: 35px;
+    position: relative;
+    display: block;
+    text-transform: capitalize;
+    padding-left: 15px;
+}
+
+.widget-categories ul li a:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "\f105";
+    font-family: @awesome;
+    line-height: 35px;
+}
+
+.widget-categories ul li a:hover,
+.widget-categories ul li a:hover:after {
+    color: @color-theme;
+}
+
+.widget-categories ul li a span {
+    margin-left: 5px;
+    color: @color-theme
+}
+
+/* property Widget */
+
+.widget-property ul li a {
+    color: @color-body;
+    font-size: 14px;
+    line-height: 35px;
+    position: relative;
+    display: block;
+    text-transform: capitalize;
+    padding-left: 15px;
+}
+
+.widget-property ul li a:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "\f105";
+    font-family: @awesome;
+    line-height: 35px;
+}
+
+.widget-property ul li a:hover,
+.widget-property ul li a:hover:after {
+    color: @color-theme;
+}
+
+.widget-property ul li a span {
+    float: right;
+}
+
+/* widget-featured-property */
+
+.widget-featured-property .property-item {
+    margin-bottom: 0;
+    display: block;
+}
+
+.widget-featured-property .property-item:hover {
+    box-shadow: none;
+}
+
+.widget-featured-property .property-item .property--info {
+    padding: 22px 0 25px;
+}
+
+.widget-featured-property .owl-carousel .owl-item {
+    padding-bottom: 0px;
+}
+
+.widget-featured-property .carousel-dots .owl-controls {
+    margin-top: 0;
+}
+
+.widget-featured-property .property-item .property--content {
+    width: 100%;
+}
+
+.widget-featured-property .property-item .property--price {
+    font-size: 18px;
+}
+
+.widget-featured-property .property-item .property--price span {
+    font-size: 12px;
+}
+
+/* widget property agent */
+
+.widget-property-agent .agent--img {
+    margin-bottom: 16px;
+}
+
+.widget-property-agent .agent--title {
+    color: @color-heading;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    text-transform: capitalize;
+    margin-bottom: 13px;
+}
+
+.widget-property-agent .agent--contact ul {
+    margin-bottom: 7px;
+}
+
+.widget-property-agent .agent--contact ul li {
+    line-height: 32px;
+}
+
+.widget-property-agent .agent--contact ul li i {
+    color: @color-heading;
+    width: 22px;
+}
+
+/* widget request */
+
+.widget-request .form-group,
+.widget-mortgage-calculator .form-group {
+    margin-bottom: 20px;
+}
+
+.widget-request textarea.form-control {
+    height: 120px;
+}
+
+/* Tags Widget */
+
+.widget-tags ul {
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+.widget-tags ul li {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.widget-tags a {
+    display: inline-block;
+    border: 1px solid rgba(34, 34, 34, 0.07);
+    background-color: @color-white;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1;
+    color: @color-body;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    padding: 9px 10px;
+}
+
+.widget-tags a:hover {
+    background-color: @color-theme;
+    color: @color-white;
+    border-color: @color-theme;
+}
+
+/* Recent Widegt */
+
+.widget-recent-posts .entry {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.widget-recent-posts .entry:last-of-type {
+    margin-bottom: 0;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.widget-recent-posts img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 85px;
+    height: 85px;
+}
+
+.widget-recent-posts .entry .entry-desc {
+    position: relative;
+    margin-left: 100px;
+}
+
+.widget-recent-posts .entry .entry-title {
+    margin-bottom: 9px;
+}
+
+.widget-recent-posts .entry .entry-title a {
+    font-family: @font-heading;
+    color: @color-heading;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    text-transform: capitalize;
+}
+
+.widget-recent-posts .entry .entry-title a:hover {
+    color: @color-theme
+}
+
+.widget-recent-posts .entry .entry-desc .entry-meta a {
+    font-family: @font-body;
+    font-size: 12px;
+    line-height: 26px;
+    color: #bdbdbd;
+}
+
+/* Search Widget */
+
+.widget-search .form-search {
+    border: 1px solid #eeeeee;
+    margin-bottom: 0;
+}
+
+.widget-search .form-search .form-control {
+    border: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: @color-body;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 49px;
+    height: 49px;
+    text-transform: none;
+    padding-left: 15px;
+}
+
+.widget-search .form-search .btn {
+    background-color: #f8f8f8;
+    color: @color-body;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    width: 40px;
+    height: 49px;
+    line-height: 29px;
+    text-align: center;
+    font-size: 14px;
+    margin-left: 0;
+    padding: 0;
+}
+
+/* Best Products */
+
+.widget-best-product .best-product .product-img {
+    width: 49px;
+    height: 49px;
+    text-align: center;
+    padding: 4px;
+}
+
+.widget-best-product .best-product .product-bio {
+    padding-top: 0;
+}
+
+.widget-best-product .best-product .product-bio .product-price {
+    color: @color-body;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 23px;
+}
+
+.widget-best-product .best-product a {
+    text-transform: uppercase;
+}
+
+
+/* ADS widget */
+
+.ads-widget img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Recent Product Widegt */
+
+.widget-recent-products .product {
+    position: relative;
+    margin-bottom: 24px;
+    min-height: 70px;
+}
+
+.widget-recent-products .product:last-of-type {
+    margin-bottom: 0;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.widget-recent-products .product img {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.widget-recent-products .product .product-desc {
+    position: relative;
+    margin-left: 65px;
+    border-bottom: 1px solid #f4f4f4;
+    padding-bottom: 18px;
+}
+
+.widget-recent-products .product:last-of-type .product-desc {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.widget-recent-products .product .product-title {
+    margin-bottom: 5px;
+}
+
+.widget-recent-products .product .product-title a {
+    color: @color-secondary;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: capitalize;
+    font-family: @font-heading;
+}
+
+.widget-recent-products .product .product-title a:hover {
+    color: @color-theme
+}
+
+.widget-recent-products .product .product-desc .product-meta {
+    font-family: @font-heading;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+
+
+/* Custom, iPhone Retina */
+
+@media only screen and (min-width: 320px) and (max-width :767px) {
+    .sidebar {
+        margin-bottom: 30px;
+        padding: 30px;
+    }
+
+    .widget,
+    .widget:last-of-type {
+        margin-bottom: 30px;
+    }
+
+}
+
+/* Small Devices, Tablets */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .widget-recent .entry .entry-desc {
+        margin-left: 70px;
+    }
+    .widget,
+    .widget:last-of-type {
+        margin-bottom: 30px;
+    }
+}
